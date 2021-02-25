@@ -1,6 +1,7 @@
 import './App.css';
 import Header from '../src/components/Header'
 import Body from '../src/components/Body'
+import Footer from '../src/components/Footer'
 
 const data = {
   name: 'HappyShoes',
@@ -22,29 +23,9 @@ function App() {
       <main>
         <Body cover={data.cover} title={data.title} description={data.description}/>
       </main>
-      <footer>"copyright by Me"{currentYear}</footer>
+      <Footer year={currentYear} company={data.company} />
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-/* <header className="App-header">
-        <button onClick={handleButton}>Button</button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */

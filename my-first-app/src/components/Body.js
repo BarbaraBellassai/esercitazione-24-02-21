@@ -1,3 +1,5 @@
+import "../assets/body.css";
+
 import React, { Component } from 'react'
 
 export default class Body extends Component {
