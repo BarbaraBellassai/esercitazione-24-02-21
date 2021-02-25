@@ -1,5 +1,6 @@
 import './App.css';
 import Header from '../src/components/Header'
+import Body from '../src/components/Body'
 
 const data = {
   name: 'HappyShoes',
@@ -19,7 +20,7 @@ function App() {
     <div className="App">
       <Header name={data.name} logo={data.logo}/>
       <main>
-        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia modi, dolorem, blanditiis maiores laboriosam repellendus recusandae iure fugiat voluptas fugit veniam obcaecati velit, soluta assumenda saepe voluptatibus? Dicta, optio est.</h1>
+        <Body cover={data.cover} title={data.title} description={data.description}/>
       </main>
       <footer>"copyright by Me"{currentYear}</footer>
     </div>
